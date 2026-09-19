@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather forcast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="weather-svgrepo-com.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <img src="images-removebg-preview.png" alt="weather-logo">
+
+        <div class="search">
+            <input type="text" placeholder="Search city" spellcheck="false">
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 id="location"></h1>
+        <div class="imp-info">
+            <div class="box">
+                <div class="common">
+                    <h3>Condition <i class="fa-solid fa-cloud-sun-rain"></i></h3>
+                </div>
+                <img id="icon" class="hidden" src="" alt="weather condition">
+                <p id="weather-type" class="hidden"></p>
+            </div>
+            <div class="box">
+                <div class="common">
+                    <h3>Temperature <i class="fa-solid fa-temperature-high"></i></h3>
+                </div>
+                <p class="pera"><span class="information" id="tempreture">0</span><span>°C</span></p>
+                <p class="extra-info" id="max-temp">max temp</p>
+                <p class="extra-info" id="min-temp">min temp</p>
+            </div>
+            <div class="box">
+                <div class="common">
+                    <h3>Humidity <i class="fa-solid fa-droplet"></i></h3>
+                </div>
+                <p class="pera"><span class="information" id="humidity">0</span><span>%</span></p>
+                <p id=""></p>
+            </div>
+            <div class="box">
+                <div class="common">
+                    <h3>Wind speed <i class="fa-solid fa-wind"></i></h3>
+                </div>
+                <p class="pera"><span class="information" id="wind-speed">0</span><span>km/h</span></p>
+                <p class="extra-info"> wind Direction:
+                    <span id="w-deg"></span>
+                </p>
+            </div>
+        </div>
+        <h1>Other Details</h1>
+        <div class="details">
+            <div class="properties">
+                <div class="heading1">
+                    <h3>properties</h3>
+                </div>
+
+                <ul>
+                    <li class="basic-info">Feels-Like</li>
+                    <li class="basic-info">Pressure</li>
+                    <li class="basic-info">Ground-Level</li>
+                    <li class="basic-info">Sea-Level</li>
+                    <li class="basic-info">Sunrise</li>
+                    <li class="basic-info">Sunset</li>
+                    <li class="basic-info">Wind-Degrees</li>
+                </ul>
+            </div>
+            <div class="data">
+                <div class="heading2">
+                    <h3>data</h3>
+                </div>
+
+                <ul>
+                    <li id="feels-like">0</li>
+                    <li id="pressure">0</li>
+                    <li id="ground-level">0</li>
+                    <li id="sea-level">0</li>
+                    <li id="sunrise">0</li>
+                    <li id="sunset">0</li>
+                    <li id="wind-degrees">0</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
